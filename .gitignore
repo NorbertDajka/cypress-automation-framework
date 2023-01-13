@@ -1,2 +1,5 @@
 /.tmp.drivedownload
 /.tmp.driveupload
+/*.mp4
+/.gitignore
+/*.png
