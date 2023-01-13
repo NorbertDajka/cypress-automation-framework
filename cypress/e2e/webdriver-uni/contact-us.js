@@ -9,6 +9,7 @@ describe ("Test contact us form on Webdriver website", () =>{
             cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html")
             cy.document().should('have.property','charset').and('eql','UTF-8')
             cy.title().should('include', 'WebDriver | Contact Us')
+            cy.url().should('include','contactus')
 
             //get element with selector playground > click (if element is )
             //cy.get('#contact-us > .thumbnail').click() 
