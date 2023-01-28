@@ -10,7 +10,15 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('madisonLogin', () => { 
+    cy.get('.skip-account > .label').click({force:true});
+    cy.get("a[title='Log In']").click();
+    cy.get('#email').type('dajkas_2005@yahoo.com');
+    cy.get('#pass').type('Popionel3');
+    cy.get("button#send2").click();
+    cy.get('.logo > img:nth-of-type(1)').click();
+
+ });
 //
 //
 // -- This is a child command --
