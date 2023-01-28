@@ -4,7 +4,7 @@
 //description of what we want to test
 describe ("Test contact us form on Webdriver website", () =>{
     //test scenario    
-    it.only ("Should be able to submit a successful submission via form", () =>{
+    it ("Should be able to submit a successful submission via form", () =>{
             //cypress code
             cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html")
             cy.document().should('have.property','charset').and('eql','UTF-8')
